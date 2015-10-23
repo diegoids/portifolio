@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Diego Neitzel | Front-end Developer</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="#############DESCRICAO#############" />
+
+    <!-- Facebook -->
+    <meta property="og:title" content="Diego Neitzel | Front-end Developer"/>
+    <meta property="og:site_name" content="Diego Neitzel | Front-end Developer"/>
+    <meta property="og:url" content="http://diegoids.com"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="#############DESCRICAO#############"/>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="app/assets/img/favicon.ico" type="image/x-icon" />
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,700,400italic' rel='stylesheet' type='text/css'>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app/assets/css/app.css">
+    
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+
+    <script type="text/javascript">
+      angular.module("portfolio", []);
+      angular.module("portfolio").controller("projectsCtrl", function($scope){
+        $scope.title = "Projects";
+      });
+    </script>
+  </head>
+
+  <body ng-app="portfolio">
+    <!-- Header -->
+    <header>
+      <!-- Menu -->
+      <nav>
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <span>I</span> <span>don't</span> <span>like</span> <span>this</span> <span>color</span>
+          </li>
+        </ul>
+      </nav>
+      
+      <button class="tab">Open/Close</button>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="page">
+      
+    </section>
+
+
+
+    <!-- About -->
+    <section id="about" class="page">
+      
+    </section>
+
+
+
+    <!-- Projects -->
+    <section id="projects" class="page" ng-controller="projectsCtrl">
+      {{title}}
+    </section>
+
+
+
+    <!-- Contact -->
+    <section id="contact" class="page">
+      
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+      <p>Thank you for your visit!</p>
+      <a href="#">To Top</a>
+    </footer>
+
+    
+    <!-- jQuery and Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+  </body>
+</html>
