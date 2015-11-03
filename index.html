@@ -21,6 +21,7 @@
 
     <!-- Font -->
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,700,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     
     <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -28,13 +29,8 @@
     
     <!-- AngularJS -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-
-    <script type="text/javascript">
-      angular.module("portfolio", []);
-      angular.module("portfolio").controller("projectsCtrl", function($scope){
-        $scope.title = "Projects";
-      });
-    </script>
+    <script src="app/assets/js/app.js"></script>
+    <script src="app/assets/js/controllers/projectsCtrl.js"></script>
   </head>
 
   <body ng-app="portfolio">
@@ -44,7 +40,10 @@
       <nav>
         <ul>
           <li>
-            <a href="#home">Home</a>
+            <div class="logo">
+              <span>d</span>
+              <span>n</span>
+            </div>
           </li>
           <li>
             <a href="#about">About</a>
@@ -55,25 +54,30 @@
           <li>
             <a href="#contact">Contact</a>
           </li>
-          <li>
-            <span>I</span> <span>don't</span> <span>like</span> <span>this</span> <span>color</span>
+          <li class="change-color">
+            I <span class="blue">don't</span> <span class="green">like</span> <span class="pink">this</span> <span class="orange">color</span>
           </li>
         </ul>
       </nav>
       
-      <button class="tab">Open/Close</button>
+      <span class="tab">
+        <i class="fa fa-bars"></i>
+      </span>
     </header>
 
     <!-- Home -->
     <section id="home" class="page">
-      
+      <div class="logo">
+        <span>d</span>
+        <span>n</span>
+      </div>
     </section>
 
 
 
     <!-- About -->
     <section id="about" class="page">
-      
+      SOBRE
     </section>
 
 
@@ -87,15 +91,15 @@
 
     <!-- Contact -->
     <section id="contact" class="page">
-      
+      CONATTO
     </section>
 
 
 
     <!-- Footer -->
     <footer>
-      <p>Thank you for your visit!</p>
-      <a href="#">To Top</a>
+      <p>thank you for your visit!</p>
+      <a href="#"><i class="fa fa-chevron-up"></i></a>
     </footer>
 
     

@@ -1,0 +1,31 @@
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: $theme-blue;
+
+  p{
+    text-align: center;
+    font-size: 20px;
+    color: #FFF;
+    font-weight: 700;
+    margin: 0;
+    padding: 10px;
+  }
+
+  a{
+    position: absolute;
+    right: 20px;
+    top: 6px;
+    color: #FFF;
+    font-size: 25px;
+    @include transition(color .5s, top .5s);
+
+    &:hover{
+      color: #000;
+      top: 2px;
+      @include transition(color .5s, top .5s);
+    }
+  }
+}

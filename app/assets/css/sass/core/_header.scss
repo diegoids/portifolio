@@ -1,0 +1,84 @@
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  nav{
+    overflow: hidden;
+
+    ul{
+      display: block;
+      position: relative;
+      z-index: 2;
+      overflow: hidden;
+      background-color: #FFF;
+      text-align: center;
+
+      li{
+        display: inline-block;
+        margin: 5px 20px;
+
+        a{
+          font-size: 14px;
+          color: black;
+          font-weight: 700;
+        }
+
+        &.change-color{
+          background-color: black;
+          @include border-radius(5px);
+          padding: 3px 10px;
+          color: #FFF;
+          cursor: pointer;
+          font-size: 12px;
+
+          .blue{
+            color: $theme-blue;
+          }
+
+          .orange{
+            color: $theme-orange;
+          }
+
+          .green{
+            color: $theme-green;
+          }
+
+          .pink{
+            color: $theme-pink;
+          }
+        }
+      }
+    }
+  }
+
+  span.tab{
+    display: inline-block;
+    background-color: black;
+    border: none;
+    color: #FFF;
+    @include border-radius(5px);
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    top: -3px;
+    left: 50%;
+    margin-left: -18px;
+
+    .fa{
+      font-size: 22px;
+      position: relative;
+      top: 7px;
+    }
+
+    &:hover{
+      background-color: blue;
+      color: black;
+      @include transition(background-color .5s, color .5s);
+    }
+  }
+}
