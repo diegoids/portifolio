@@ -1,0 +1,242 @@
+/* INIT: Projects Animations */
+@include keyframes(projectFocus) {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+/* END: Projects Animations */
+
+
+
+
+/* INIT: Contact Animations */
+@include keyframes(LinkedIn) {
+  0% {
+    left: 51px;
+    top: 27px;
+    opacity: 1
+  }
+  16.67% {
+    left: -26px;
+    top: 89px
+  }
+  33.33% {
+    left: 108px;
+    top: 135px
+  }
+  50% {
+    left: 147px;
+    top: 27px
+  }
+  66.66% {
+    left: 195px;
+    top: 181px;
+    text-indent: -100px
+  }
+  83.33% {
+    left: 294px;
+    top: 107px;
+    -webkit-transform: translate3d(0, 0, 0) scale(.225);
+    text-indent: 0
+  }
+  100% {
+    left: 294px;
+    top: 107px;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    text-indent: 0;
+    opacity: 1
+  }
+}
+
+@include keyframes(Facebook) {
+  0% {
+    left: 51px;
+    top: 27px;
+    opacity: 1
+  }
+  12.5% {
+    left: -26px;
+    top: 89px
+  }
+  25% {
+    left: 108px;
+    top: 135px
+  }
+  37.5% {
+    left: -31px;
+    top: 220px
+  }
+  50% {
+    left: 171px;
+    top: 290px
+  }
+  62.5% {
+    left: 195px;
+    top: 181px
+  }
+  75% {
+    left: 294px;
+    top: 231px;
+    text-indent: -100px
+  }
+  87.5% {
+    left: 429px;
+    top: 227px;
+    -webkit-transform: translate3d(0, 0, 0) scale(.225);
+    text-indent: 0
+  }
+  100% {
+    left: 429px;
+    top: 227px;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    text-indent: 0;
+    opacity: 1
+  }
+}
+
+@include keyframes(Skype) {
+  0% {
+    left: 51px;
+    top: 27px;
+    opacity: 1
+  }
+  10% {
+    left: -26px;
+    top: 89px
+  }
+  20% {
+    left: 108px;
+    top: 135px
+  }
+  30% {
+    left: -31px;
+    top: 220px
+  }
+  40% {
+    left: 171px;
+    top: 290px
+  }
+  50% {
+    left: 195px;
+    top: 181px
+  }
+  60% {
+    left: 294px;
+    top: 231px
+  }
+  70% {
+    left: 429px;
+    top: 227px
+  }
+  80% {
+    left: 513px;
+    top: 344px;
+    text-indent: -100px
+  }
+  90% {
+    left: 641px;
+    top: 389px;
+    -webkit-transform: translate3d(0, 0, 0) scale(.225);
+    text-indent: 0
+  }
+  100% {
+    left: 641px;
+    top: 389px;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    text-indent: 0;
+    opacity: 1
+  }
+}
+
+@include keyframes(Email) {
+    0% {
+        left: 51px;
+        top: 27px;
+        opacity: 1
+    }
+    20% {
+        left: -26px;
+        top: 89px
+    }
+    40% {
+        left: 108px;
+        top: 135px
+    }
+    60% {
+        left: -31px;
+        top: 220px;
+        text-indent: -100px
+    }
+    80% {
+        left: 171px;
+        top: 290px;
+        -webkit-transform: translate3d(0, 0, 0) scale(.225);
+        text-indent: 0
+    }
+    100% {
+        left: 171px;
+        top: 290px;
+        -webkit-transform: translate3d(0, 0, 0) scale(1);
+        text-indent: 0;
+        opacity: 1
+    }
+}
+
+@include keyframes(GitHub) {
+  0% {
+    left: 51px;
+    top: 27px;
+    opacity: 1
+  }
+  10% {
+    left: -26px;
+    top: 89px
+  }
+  20% {
+    left: 108px;
+    top: 135px
+  }
+  30% {
+    left: 147px;
+    top: 27px
+  }
+  40% {
+    left: 195px;
+    top: 181px
+  }
+  50% {
+    left: 294px;
+    top: 107px
+  }
+  60% {
+    left: 294px;
+    top: 231px
+  }
+  70% {
+    left: 429px;
+    top: 227px
+  }
+  80% {
+    left: 501px;
+    top: 116px;
+    text-indent: -100px
+  }
+  90% {
+    left: 576px;
+    top: -21px;
+    -webkit-transform: translate3d(0, 0, 0) scale(.225);
+    text-indent: 0
+  }
+  100% {
+    left: 576px;
+    top: -21px;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    text-indent: 0;
+    opacity: 1
+  }
+}
+/* END: Contact Animations */

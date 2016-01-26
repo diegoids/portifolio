@@ -1,0 +1,65 @@
+body{
+  .bg-colored,
+  .bg-colored-lighter,
+  .txt-colored,
+  .projects-list figcaption,
+  .tags li{
+    @include transition(color 1s, background-color 1s);
+  }
+}
+
+.theme-blue{
+  .bg-colored,
+  .tags li{
+    background-color: $theme-blue;
+  }
+  .bg-colored-lighter{
+    background-color: $theme-blue-rgb;
+  }
+  .txt-colored,
+  .projects-list figcaption{
+      color: $theme-blue;
+  }
+}
+
+.theme-green{
+  .bg-colored,
+  .tags li{
+    background-color: $theme-green;
+  }
+  .bg-colored-lighter{
+    background-color: $theme-green-rgb;
+  }
+  .txt-colored,
+  .projects-list figcaption{
+      color: $theme-green;
+  }
+}
+
+.theme-orange{
+  .bg-colored,
+  .tags li{
+    background-color: $theme-orange;
+  }
+  .bg-colored-lighter{
+    background-color: $theme-orange-rgb;
+  }
+  .txt-colored,
+  .projects-list figcaption{
+      color: $theme-orange;
+  }
+}
+
+.theme-pink{
+  .bg-colored,
+  .tags li{
+    background-color: $theme-pink;
+  }
+  .bg-colored-lighter{
+    background-color: $theme-pink-rgb;
+  }
+  .txt-colored,
+  .projects-list figcaption{
+      color: $theme-pink;
+  }
+}

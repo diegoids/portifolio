@@ -1118,7 +1118,7 @@ header {
           display: block;
           width: 168px;
           margin: 0 auto;
-          background-image: url("../img/img_computer.png");
+          background-image: url("../../images/img_computer.png");
           background-repeat: no-repeat;
           background-position: center 20px;
           text-align: center;
@@ -1167,7 +1167,7 @@ header {
         float: left;
         width: 168px; }
         .page#projects .project-detail .project-pictures li {
-          background: url("../img/img_computer.png") 0 0 no-repeat;
+          background: url("../../images/img_computer.png") 0 0 no-repeat;
           padding: 6px 0 47px 7px; }
           .page#projects .project-detail .project-pictures li img {
             width: 154px;
@@ -1245,7 +1245,7 @@ header {
       margin-top: 60px; }
     .page#contact .contact-list {
       position: relative;
-      background: url(../img/bg_network.gif) center 0 no-repeat;
+      background: url(../../images/bg_network.gif) center 0 no-repeat;
       width: 100%;
       max-width: 902px;
       position: relative;

@@ -3,7 +3,10 @@
 
 @import "helpers/mixins";
 @import "helpers/logo";
+@import "helpers/animations";
 
+@import "core/theme";
 @import "core/footer";
 @import "core/header";
 @import "core/layout";
+@import "core/mobile";

@@ -1,5 +1,5 @@
 .logo{
-  background-color: #000;
+  background-color: #FFF;
   @include border-radius(125px);
   width: 125px;
   height: 125px;
@@ -8,7 +8,6 @@
 
   span{
     font-family: $font-stack;
-    color: #0ac2d2;
     font-size: 98px;
     position: relative;
     top: -11px;
@@ -20,24 +19,17 @@
       left: -3px; 
     }
   }
-}
 
-header{
-
-  .logo{
-    background-color: #000;
+  &.header-logo{
     @include border-radius(30px);
     width: 30px;
     height: 30px;
-    text-align: center;
     letter-spacing: -4px;
 
     span{
-      font-family: $font-stack;
-      color: #0ac2d2;
       font-size: 18px;
-      position: relative;
       top: 2px;
+      color: #FFF;
 
       &:first-child{
         left: -3px;

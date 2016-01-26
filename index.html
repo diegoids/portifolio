@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<link rel="stylesheet" href="app/assets/css/app.css"><!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Diego Neitzel | Front-end Developer</title>
@@ -33,14 +33,14 @@
     <script src="app/assets/js/controllers/projectsCtrl.js"></script>
   </head>
 
-  <body ng-app="portfolio">
+  <body ng-app="portfolio" class="theme-blue">
     <!-- Header -->
     <header>
       <!-- Menu -->
       <nav>
         <ul>
           <li>
-            <div class="logo">
+            <div class="logo header-logo bg-colored">
               <span>d</span>
               <span>n</span>
             </div>
@@ -65,11 +65,32 @@
       </span>
     </header>
 
+    <!-- Cover Image -->
+    <div class="mask"></div>
+    <div class="cover-bg bg-colored"></div>
+    <div class="cover-image" style="background-image: url('images/img_cover01.jpg');"></div>
+
     <!-- Home -->
     <section id="home" class="page">
-      <div class="logo">
-        <span>d</span>
-        <span>n</span>
+      <div class="container">
+        <div class="row">
+          <div class="home-holder col-md-12">
+            <div class="logo txt-colored">
+              <span>d</span>
+              <span>n</span>
+            </div>
+
+            <h1>I'm DIEGO NEITZEL</h1>
+
+            <p>
+              Web UI/UX Designer and Front End Developer based in Brisbane, Australia.
+              <br>
+              Take a look at some of my work, and if you like them, feel free to contact me.
+            </p>
+
+            <a href="#about" class="go-next"><i class="fa fa-chevron-down"></i></a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -77,27 +98,187 @@
 
     <!-- About -->
     <section id="about" class="page">
-      SOBRE
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="txt-colored">about</h2>
+
+            <figure>
+              <img src="app/assets/img/img_photo.png" alt="Diego Neitzel">
+            </figure>
+
+            <p>
+              Hi! My name is <strong class="txt-colored">Diego Neitzel</strong> and I'm a brazilian front-end developer passionated for the web, sports and travels.
+              <br><br>
+              I have <strong class="txt-colored">7+ years experience</strong> working with a wide range of clients & businesses on Web Development like IBM, Netshoes, Editora Abril, etc. I think that more than write some code or draw in Photoshop, the possibility to <strong class="txt-colored">plan solutions for help the people</strong> is the coolest thing.
+              <br><br>
+              I have a range of interest within HTML5 & Responsive Web Design and I like to study & research daily how people interact and function with the web. <strong class="txt-colored">I love learning something new every day and that’s what keeps me motivated and progressing my skills</strong>, to develop modern, highly interactive, responsive websites & web apps with cutting edge technologies.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="skillbox bg-colored-lighter">
+              <h3>Skills:</h3>
+              <ul class="side-info">
+                <li>Html 5</li>
+                <li>Javascript</li>
+                <li>AngularJS</li>
+                <li>Jquery</li>
+                <li>ReactJS</li>
+                <li>CSS 3</li>
+                <li>Sass & Less</li>
+                <li>Bootstrap</li>
+                <li>Gulp & Grunt</li>
+                <li>Git & SVN</li>
+                <li>IOS / Linux / Windows</li>
+                <li>Photoshop</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="skillbox bg-colored-lighter">
+              <h3>Patterns and Techniques:</h3>
+              <ul>
+                <li>Reponsive/Adaptative Layouts</li>
+                <li>Object Oriented Programming</li>
+                <li>MVC</li>
+                <li>Ajax</li>
+                <li>Performance Optimization Techniques</li>
+                <li>SEO On-page Optimization</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <p>More details in my <a href="" class="txt-colored">Resumé</a> or <a href="https://www.linkedin.com/in/diegoids" target="_blank" class="txt-colored">Linkedin</a>.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
 
 
     <!-- Projects -->
     <section id="projects" class="page" ng-controller="projectsCtrl">
-      {{title}}
+      <h2>projects</h2>
+
+      <ul class="projects-list">
+        <li>
+          <figure>
+            <img src="app/assets/img/img_cover01.jpg" alt="Netshoes">
+            <figcaption>
+              Netshoes
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="app/assets/img/img_cover01.jpg" alt="Netshoes">
+            <figcaption>
+              Netshoes
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="app/assets/img/img_cover01.jpg" alt="Netshoes">
+            <figcaption>
+              Netshoes
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="app/assets/img/img_cover01.jpg" alt="Netshoes">
+            <figcaption>
+              Netshoes
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="app/assets/img/img_cover01.jpg" alt="Netshoes">
+            <figcaption>
+              Netshoes
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+
+      <div class="project-detail">
+        <i class="fa fa-times-circle"></i>
+        <ul class="project-pictures">
+          <li><img src="app/assets/img/img_cover01.jpg" alt="Netshoes"></li>
+        </ul>
+
+        <div class="project-info">
+          <p class="title">Netshoes <a href="http://www.netshoes.com.br" class="txt-colored" target="_blank"><i class="fa fa-external-link"></i> website</a></p>
+
+          <ul class="tags">
+            <li>Responsive</li>
+            <li>Adaptative</li>
+            <li>HTML5</li>
+            <li>Javascript</li>
+            <li>AngularJS</li>
+            <li>Jquery</li>
+            <li>CSS3</li>
+            <li>Bootstrap</li>
+            <li>Ajax</li>
+            <li>Cross Browser</li>
+          </ul>
+
+          <p class="others">
+            <strong>info</strong>
+            The Biggest sport's ecommerce in Brazil.
+          </p>
+
+          <p class="others">
+            <strong>client</strong>
+            Netshoes
+          </p>
+
+          <p class="others">
+            <strong>working as</strong>
+            Front-End Developer @ F.Biz
+          </p>
+        </div>
+      </div>
     </section>
 
 
 
     <!-- Contact -->
     <section id="contact" class="page">
-      CONATTO
+      <h2 class="txt-colored">contact</h2>
+
+      <ul class="contact-list">
+        <li class="bg-colored link">
+          <a href="https://www.linkedin.com/in/diegoids" target="_blank"><i class="fa fa-linkedin"></i><span>Linkedin</span></a>
+        </li>
+        <li class="bg-colored face">
+          <a href="http://facebook.com/oidiego" target="_blank"><i class="fa fa-facebook"></i><span>Facebook</span></a>
+        </li>
+        <li class="bg-colored skyp">
+          <a href="skype:diegoids"><i class="fa fa-skype"></i><span>Skype</span></a>
+        </li>
+        <li class="bg-colored gith">
+          <a href="https://github.com/diegoids" target="_blank"><i class="fa fa-github"></i><span>GitHub</span></a>
+        </li>
+        <li class="bg-colored emai">
+          <a href="mailto:diegoids@gmail.com"><i class="fa fa-envelope"></i><span>Email</span></a>
+        </li>
+      </ul>
     </section>
 
 
 
     <!-- Footer -->
-    <footer>
+    <footer class="bg-colored">
       <p>thank you for your visit!</p>
       <a href="#"><i class="fa fa-chevron-up"></i></a>
     </footer>
@@ -106,6 +287,12 @@
     <!-- jQuery and Bootstrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="app/assets/js/functions.js"></script>
+    <script>
+      $(function(){
+        Portfolio.init();
+      });
+    </script>
 
     <!-- Google Analytics -->
   </body>

@@ -6,10 +6,64 @@
 }
 
 
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow:    $shadow;
+  box-shadow:         $shadow;
+}
+
 
 @mixin transition($transition...) {
   -moz-transition:    $transition;
   -o-transition:      $transition;
   -webkit-transition: $transition;
   transition:         $transition;
+}
+
+
+
+@mixin animationNameDelay($name, $time) {
+  -webkit-animation-name: $name;
+  -webkit-animation-delay: $time;
+  -moz-animation-name: $name;
+  -moz-animation-delay: $time;
+  -o-animation-name: $name;
+  -o-animation-delay: $time;
+  animation-name: $name;
+  animation-delay: $time;
+}
+
+
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+
+
+
+@mixin bp-large {
+  @media only screen and (max-width: 899px) {
+    @content;
+  }
+}
+@mixin bp-medium {
+  @media only screen and (max-width: 690px) {
+    @content;
+  }
+}
+@mixin bp-small {
+  @media only screen and (max-width: 30em) {
+    @content;
+  }
 }

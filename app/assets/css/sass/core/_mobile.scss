@@ -1,0 +1,177 @@
+@include bp-large {
+  .page{
+    /* Projects */
+    &#projects{
+      .projects-list{
+        width: 100%;
+
+        li{
+          width: 30%;
+        }
+      }
+
+      .project-detail{
+        width: 100%;
+        margin-left: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+
+@include bp-medium {
+  .page{
+    /* Projects */
+    &#projects{
+      .projects-list{
+        width: 100%;
+
+        li{
+          width: 45%;
+        }
+      }
+    }
+  }
+}
+
+
+@include bp-small {
+  /* Header */
+  header{
+    top: -83px;
+
+    nav{
+
+      ul{
+
+        li{
+          margin: 5px 13px;
+
+          &:last-child{
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+
+
+  /* Cover Image */
+  .cover-image,
+  .cover-bg{
+    height: 460px !important;
+  }
+
+
+  /* Pages */
+  .page{
+
+    /* Home */
+    &#home{
+      height: 460px !important;
+
+      .home-holder{
+        height: 460px !important;
+      }
+
+      .logo{
+        margin: 45px auto 0;
+      }
+
+      h1{
+        font-size: 32px;
+      }
+
+      p{
+        font-size: 16px;
+      }
+
+      a{
+        left: 50%;
+        font-size: 30px;
+        bottom: 10px;
+        width: 30px;
+        margin-left: -15px;
+
+        &:hover{
+          bottom:0px;
+        }
+      }
+    }
+
+    /* About */
+    &#about{
+
+    }
+
+    /* Projects */
+    &#projects{
+      .projects-list{
+        width: 100%;
+
+        li{
+          width: 90%;
+          display: block;
+          margin: 0 auto 20px;
+        }
+      }
+
+      .project-detail{
+        .project-pictures{
+          float: inherit;
+          width: 168px;
+          margin: 0 auto;
+        }
+
+        .project-info{
+          padding: 0;
+        }
+      }
+    }
+
+    /* Contact */
+    &#contact{
+      .contact-list{
+
+        li{
+          opacity: 1;
+
+          &.link{
+            left: 429px;
+            top: 227px;
+          }
+
+          &.gith{
+            left: 500px;
+            top: 116px;
+          }
+
+          &.face{
+            left: 294px;
+            top: 107px;
+          }
+
+          &.emai{
+            left: 512px;
+            top: 344px;
+          }
+
+          &.skyp{
+            left: 271px;
+            top: 371px;
+          }
+        }
+      }
+    }
+  }
+
+  footer{
+    p{
+      font-size: 15px;
+    }
+    a{
+      font-size: 20px;
+    }
+  } 
+}
