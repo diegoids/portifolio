@@ -172,7 +172,7 @@
       <h2>{{title}}</h2>
 
       <ul class="projects-list">
-        <li ng-repeat="project in projects" ng-click="showProject(project.slug)">
+        <li ng-repeat="project in projects" ng-click="showProject(project.slug, $event)">
           <figure>
             <img src="{{project.images[0]}}" alt="{{project.title}}">
             <figcaption>
@@ -185,7 +185,7 @@
       <div class="project-detail">
         <i class="fa fa-times-circle"></i>
         <ul class="project-pictures">
-          <li ng-repeat="image in projectDetail.images"><img src="{{image}}" alt="{{projectDetail.title}}"></li>
+          <li><img src="{{projectDetail.images[0]}}" alt="{{projectDetail.title}}"></li>
         </ul>
 
         <div class="project-info">

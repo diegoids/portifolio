@@ -44,10 +44,12 @@ angular.module("portfolio", []).controller("projectsCtrl", function($scope, $fil
     }
   ];
 
-  $scope.showProject = function(projectSlug){
+  $scope.showProject = function(projectSlug, $event){
     var project = $filter('filter')($scope.projects, {slug: projectSlug}, true);
     
     $scope.projectDetail = project[0];
+    
+    Portfolio.openProjects($event.target, ['ola1', 'ola2', 'ola3']);
   }
   
 });

@@ -4,7 +4,6 @@ var Portfolio = {
 
     this.reorganize.init();
     this.navBar.init();
-    this.openProjects();
     this.animateContact();
 
     //reorganize layout when resize browser
@@ -136,34 +135,35 @@ var Portfolio = {
     }
   },
 
-  openProjects : function(){
+  openProjects : function(elm, images){
     var _this          = this,
         $projects      = $('#projects .projects-list li'),
         $mask          = $('.mask'),
         $projectDetail = $('#projects .project-detail'),
         $closeButton   = $('#projects .project-detail .fa-times-circle, .mask'),
-        scrollPos;
+        scrollPos      = $(window).scrollTop(),
+        top            = $(elm).offset().top,
+        winW           = window.innerWidth,
+        isMobile       = _this.isMobile.any() === null && winW > 690;
 
-    $projects.click(function(){
-      var top            = $(this).offset().top,
-          winW           = window.innerWidth,
-          isMobile       = _this.isMobile.any() === null && winW > 690;
+    //Show modal according with device
+    if( isMobile ){
+
+      $('header').hide();
+      $mask.fadeIn();
+      $projectDetail.css({'top': top}).fadeIn();
+
+    } else {
       
-      scrollPos = $(window).scrollTop();
+      var modalH = $projectDetail.height();
+      
+      $projectDetail.show();
+      $('body').height(modalH).css({'overflow':'hidden'});
+      $(window).scrollTop(0);
 
-      if( isMobile ){
-        $('header').hide();
-        $mask.fadeIn();
-        $projectDetail.css({'top': top}).fadeIn();
-      } else {
-        var modalH = $projectDetail.height();
-        
-        $projectDetail.show();
-        $('body').height(modalH).css({'overflow':'hidden'});
-        $(window).scrollTop(0);
-      }
-    });
+    }
 
+    //Close modal
     $closeButton.click(function(){
       var winW     = window.innerWidth,
           isMobile = _this.isMobile.any() === null && winW > 690;
