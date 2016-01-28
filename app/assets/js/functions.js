@@ -200,3 +200,7 @@ var Portfolio = {
   }
 
 }
+
+$(function(){
+  Portfolio.init();
+});

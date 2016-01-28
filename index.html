@@ -172,43 +172,11 @@
       <h2>{{title}}</h2>
 
       <ul class="projects-list">
-        <li>
+        <li ng-repeat="project in projects" ng-click="showProject(project.slug)">
           <figure>
-            <img src="app/assets/img/img_cover01.jpg" alt="Netshoes">
+            <img src="{{project.images[0]}}" alt="{{project.title}}">
             <figcaption>
-              Netshoes
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="app/assets/img/img_cover01.jpg" alt="Netshoes">
-            <figcaption>
-              Netshoes
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="app/assets/img/img_cover01.jpg" alt="Netshoes">
-            <figcaption>
-              Netshoes
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="app/assets/img/img_cover01.jpg" alt="Netshoes">
-            <figcaption>
-              Netshoes
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="app/assets/img/img_cover01.jpg" alt="Netshoes">
-            <figcaption>
-              Netshoes
+              {{project.title}}
             </figcaption>
           </figure>
         </li>
@@ -217,38 +185,24 @@
       <div class="project-detail">
         <i class="fa fa-times-circle"></i>
         <ul class="project-pictures">
-          <li><img src="app/assets/img/img_cover01.jpg" alt="Netshoes"></li>
+          <li ng-repeat="image in projectDetail.images"><img src="{{image}}" alt="{{projectDetail.title}}"></li>
         </ul>
 
         <div class="project-info">
-          <p class="title">Netshoes <a href="http://www.netshoes.com.br" class="txt-colored" target="_blank"><i class="fa fa-external-link"></i> website</a></p>
+          <p class="title">{{projectDetail.title}} <a href="{{projectDetail.url}}" class="txt-colored" target="_blank"><i class="fa fa-external-link"></i> website</a></p>
 
           <ul class="tags">
-            <li>Responsive</li>
-            <li>Adaptative</li>
-            <li>HTML5</li>
-            <li>Javascript</li>
-            <li>AngularJS</li>
-            <li>Jquery</li>
-            <li>CSS3</li>
-            <li>Bootstrap</li>
-            <li>Ajax</li>
-            <li>Cross Browser</li>
+            <li ng-repeat="tag in projectDetail.tags">{{tag}}</li>
           </ul>
 
           <p class="others">
             <strong>info</strong>
-            The Biggest sport's ecommerce in Brazil.
+            {{projectDetail.info}}
           </p>
 
           <p class="others">
             <strong>client</strong>
-            Netshoes
-          </p>
-
-          <p class="others">
-            <strong>working as</strong>
-            Front-End Developer @ F.Biz
+            {{projectDetail.client}}
           </p>
         </div>
       </div>
@@ -292,11 +246,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="app/assets/js/functions.js"></script>
-    <script>
-      $(function(){
-        Portfolio.init();
-      });
-    </script>
 
     <!-- Google Analytics -->
   </body>
