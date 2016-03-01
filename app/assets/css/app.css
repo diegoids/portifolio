@@ -1416,14 +1416,19 @@ header {
       margin-bottom: 10px;
       border-bottom: 1px solid black;
       border-top: 1px solid black; }
-    .page#projects .project-detail .project-pictures {
-      float: inherit;
-      width: 168px;
-      margin: 0 auto; }
-    .page#projects .project-detail .project-info {
-      padding: 0; }
+    .page#projects .project-detail {
+      width: 100%;
+      margin-left: 0;
+      left: 0; }
+      .page#projects .project-detail .project-pictures {
+        float: inherit;
+        width: 200px;
+        margin: 0 auto; }
+      .page#projects .project-detail .project-info {
+        padding: 0; }
     .page#contact .contact-list li {
-      opacity: 1; }
+      opacity: 1;
+      margin-left: -5000px; }
       .page#contact .contact-list li.link {
         left: 429px;
         top: 227px; }

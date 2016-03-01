@@ -154,20 +154,16 @@ var Portfolio = {
       $projectDetail.css({'top': top}).fadeIn();
 
     } else {
-
-      var modalH = $projectDetail.height();
-
+      
       $projectDetail.show();
-      $('body').height(modalH).css({'overflow':'hidden'});
+      $projectDetail.css({'height':'600px'});
+      $('window, body, html').height(600).css({'overflow-y':'hidden','position':'relative'});
       $(window).scrollTop(0);
 
     }
 
     //Close modal
     $closeButton.click(function(){
-      var winW     = window.innerWidth,
-          isMobile = _this.isMobile.any() === null && winW > 690;
-
       if( isMobile ){
         $('header').show();
         $mask.fadeOut();
@@ -176,7 +172,7 @@ var Portfolio = {
         $(window).scrollTop(scrollPos);
         $('header').show();
         $projectDetail.hide();
-        $('body').height('100%').css({'overflow':'visible'});
+        $('window, body, html').height('100%').css({'overflow-y':'visible','position':'static'});
       }
     });
   },
