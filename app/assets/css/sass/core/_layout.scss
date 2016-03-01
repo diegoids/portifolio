@@ -163,63 +163,53 @@
     }
 
     .projects-list{
-      width: 900px;
-      margin: 0 auto;
+      overflow: hidden;
+      padding-bottom: 40px;
 
       li{
-        display: inline-block;
-        width: 22%;
-        margin: 0 10px 20px;
+        float: left;
+        width: 33.3%;
         cursor: pointer;
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        -moz-osx-font-smoothing: grayscale;
-        position: relative;
-        background-color: #FFF;
-        @include box-shadow(0px 2px 7px 1px rgba(0,0,0,0.35));
 
         figure{
           display: block;
-          width: 168px;
-          margin: 0 auto;
-          background-image: url('../img/img_computer.png');
-          background-repeat: no-repeat;
-          background-position: center 20px;
-          text-align: center;
-          padding: 26px 0 20px;
+          position: relative;
+          overflow: hidden;
 
           img{
-            width: 154px;
-            height: 88px;
+            width: 100%;
+            @include transform(scale(1));
+            @include transition(all .5s);
           }
 
           figcaption{
-            margin-top: 50px;
+            opacity: 0;
+            @include transform(scale(2));
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            line-height: 210px;
+            text-align: center;
             font-weight: bold;
-            font-size: 15px;
+            font-size: 30px;
+            color: #D6D6D6;
+            @include transition(all .5s);
           }
         }
 
-        &:before{
-          content: '';
-          position: absolute;
-          border: #FFF solid 6px;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-        }
-
         &:hover{
-          @include box-shadow(none);
+          figure{
 
-          &:before{
-            -webkit-animation-name: projectFocus;
-            animation-name: projectFocus;
+            img{
+              @include transform(scale(1.1));
+            }
+
+            figcaption{
+              opacity: 1;
+              @include transform(scale(1));
+            }
           }
         }
       }
@@ -249,12 +239,9 @@
         width: 168px;
 
         li{
-          background: url('../img/img_computer.png') 0 0 no-repeat;
-          padding: 6px 0 47px 7px;
 
           img{
-            width: 154px;
-            height: 88px;
+            width: 100%;
             display: block;
             @include transition(opacity .5s);
           }

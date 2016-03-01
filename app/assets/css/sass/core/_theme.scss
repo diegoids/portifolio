@@ -2,7 +2,6 @@ body{
   .bg-colored,
   .bg-colored-lighter,
   .txt-colored,
-  .projects-list figcaption,
   .tags li{
     @include transition(color 1s, background-color 1s);
   }
@@ -16,8 +15,7 @@ body{
   .bg-colored-lighter{
     background-color: $theme-blue-rgb;
   }
-  .txt-colored,
-  .projects-list figcaption{
+  .txt-colored{
       color: $theme-blue;
   }
 }
@@ -30,8 +28,7 @@ body{
   .bg-colored-lighter{
     background-color: $theme-green-rgb;
   }
-  .txt-colored,
-  .projects-list figcaption{
+  .txt-colored{
       color: $theme-green;
   }
 }
@@ -44,8 +41,7 @@ body{
   .bg-colored-lighter{
     background-color: $theme-orange-rgb;
   }
-  .txt-colored,
-  .projects-list figcaption{
+  .txt-colored{
       color: $theme-orange;
   }
 }
@@ -58,8 +54,7 @@ body{
   .bg-colored-lighter{
     background-color: $theme-pink-rgb;
   }
-  .txt-colored,
-  .projects-list figcaption{
+  .txt-colored{
       color: $theme-pink;
   }
 }

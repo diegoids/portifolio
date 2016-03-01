@@ -4,7 +4,7 @@ projectsJson = [
     "title"        : "My Portfolio",
     "url"          : "http://www.diegoneitzel.com",
     "tags"         : ["HTML5", "CSS3", "SASS", "Bootstrap", "Javascript", "Jquery", "AngularJS", "GulpJS", "Ajax", "GIT", "Photoshop", "Responsive", "SEO"],
-    "info"         : "My online portfolio to show my experience and projects that I had worked on. It was totally developed by me.",
+    "info"         : "My online portfolio to show my experience and projects that I had worked on. It was totally developed by me using the technologies above.",
     "client"       : "Me :)",
     "cover_image"  : "app/assets/img/projects/portfolio/img01.jpg",
     "detail_image" : "app/assets/img/projects/portfolio/img02.jpg"
@@ -50,7 +50,7 @@ projectsJson = [
   {
     "slug"         : "vejaspapp",
     "title"        : "VejaSP APP",
-    "url"          : "http://vejasp.abril.com.br/descontos",
+    "url"          : "https://itunes.apple.com/br/app/veja-sao-paulo/id370195473",
     "tags"         : ["Titanium API", "Geolocation API", "HTML5", "CSS3", "SASS", "Javascript", "NodeJS", "AngularJS", "Jquery", "Ajax", "RestFull API", "GIT", "Scrum Methodology"],
     "info"         : "APP about one of the largest brazilian magazine. Using Geolocation API you can find places near for you on a map and also you can make reviews with rating and share with your friends.",
     "client"       : "VejaSP @ Editora Abril",
