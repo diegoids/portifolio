@@ -154,9 +154,9 @@ var Portfolio = {
       $projectDetail.css({'top': top}).fadeIn();
 
     } else {
-      
+
       var modalH = $projectDetail.height();
-      
+
       $projectDetail.show();
       $('body').height(modalH).css({'overflow':'hidden'});
       $(window).scrollTop(0);

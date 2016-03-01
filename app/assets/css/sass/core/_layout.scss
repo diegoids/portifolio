@@ -256,6 +256,7 @@
             width: 154px;
             height: 88px;
             display: block;
+            @include transition(opacity .5s);
           }
         }
       }

@@ -14,7 +14,7 @@
     <meta property="og:site_name" content="Diego Neitzel | Front-end Developer"/>
     <meta property="og:url" content="http://diegoids.com"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:description" content="#############DESCRICAO#############"/>
+    <meta property="og:description" content="Diego Neitzel - Front-end Developer with 7+ years experience passionated for the web"/>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="app/assets/img/favicon.ico" type="image/x-icon" />
@@ -29,6 +29,7 @@
     
     <!-- AngularJS -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="content.json"></script>
     <script src="app/assets/js/app.js"></script>
     <script src="app/assets/js/controllers/projectsCtrl.js"></script>
   </head>
@@ -174,7 +175,7 @@
       <ul class="projects-list">
         <li ng-repeat="project in projects" ng-click="showProject(project.slug, $event)">
           <figure>
-            <img src="{{project.images[0]}}" alt="{{project.title}}">
+            <img src="{{project.cover_image}}" alt="{{project.title}}">
             <figcaption>
               {{project.title}}
             </figcaption>
@@ -185,7 +186,7 @@
       <div class="project-detail">
         <i class="fa fa-times-circle"></i>
         <ul class="project-pictures">
-          <li><img src="{{projectDetail.images[0]}}" alt="{{projectDetail.title}}"></li>
+          <li><img src="{{projectDetail.detail_image}}" alt="{{projectDetail.title}}"></li>
         </ul>
 
         <div class="project-info">

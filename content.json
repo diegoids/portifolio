@@ -1,0 +1,72 @@
+projectsJson = [
+  {
+    "slug"         : "portfolio",
+    "title"        : "My Portfolio",
+    "url"          : "http://www.diegoneitzel.com",
+    "tags"         : ["HTML5", "CSS3", "SASS", "Bootstrap", "Javascript", "Jquery", "AngularJS", "GulpJS", "Ajax", "GIT", "Photoshop", "Responsive", "SEO"],
+    "info"         : "My online portfolio to show my experience and projects that I had worked on. It was totally developed by me.",
+    "client"       : "Me :)",
+    "cover_image"  : "app/assets/img/projects/portfolio/img01.jpg",
+    "detail_image" : "app/assets/img/projects/portfolio/img02.jpg"
+  },
+
+
+  {
+    "slug"         : "netshoes",
+    "title"        : "Netshoes E-commerce",
+    "url"          : "http://www.netshoes.com.br",
+    "tags"         : ["HTML5", "CSS3", "SASS", "Javascript", "Jquery", "AngularJS", "GruntJS", "Ajax", "RestFull API", "GIT", "Adaptative", "SEO", "UX", "Scrum Methodology", "Integration with JAVA"],
+    "info"         : "The largest sport's e-commerce in Brazil. I led the front-end team for this project, where we had a great experience to integrate our front-end code with a indian team, which was alocated in India developing the back-end frame.",
+    "client"       : "Netshoes @ F.Biz Agency",
+    "cover_image"  : "app/assets/img/projects/netshoes/img01.jpg",
+    "detail_image" : "app/assets/img/projects/netshoes/img02.jpg"
+  },
+
+
+  {
+    "slug"         : "casacor",
+    "title"        : "CASACOR",
+    "url"          : "http://casacor.com.br",
+    "tags"         : ["HTML5", "CSS3", "SASS", "Bootstrap", "Javascript", "NodeJS", "AngularJS", "Jquery", "GruntJS", "Ajax", "RestFull API", "GIT", "Responsive/Adaptative", "SEO", "Integration with Ruby on Rails"],
+    "info"         : "Website and Restful API development.",
+    "client"       : "CasaCor @ Editora Abril",
+    "cover_image"  : "app/assets/img/projects/casacor/img01.jpg",
+    "detail_image" : "app/assets/img/projects/casacor/img02.jpg"
+  },
+
+
+  {
+    "slug"         : "vejasp",
+    "title"        : "VejaSP",
+    "url"          : "http://vejasp.abril.com.br",
+    "tags"         : ["HTML5", "CSS3", "SASS", "Bootstrap", "Javascript", "NodeJS", "AngularJS", "Jquery", "GruntJS", "Ajax", "RestFull API", "GIT", "Adaptative", "SEO", "Scrum Methodology", "Integration with Ruby on Rails"],
+    "info"         : "Website about one of the largest brazilian magazine. We studied a lot about User eXperience and page performance, and by the way, we used widgets made in NodeJS to make the pages lighter and easier to the user.",
+    "client"       : "VejaSP @ Editora Abril",
+    "cover_image"  : "app/assets/img/projects/vejasp/img01.jpg",
+    "detail_image" : "app/assets/img/projects/vejasp/img02.jpg"
+  },
+
+
+  {
+    "slug"         : "vejaspapp",
+    "title"        : "VejaSP APP",
+    "url"          : "http://vejasp.abril.com.br/descontos",
+    "tags"         : ["Titanium API", "Geolocation API", "HTML5", "CSS3", "SASS", "Javascript", "NodeJS", "AngularJS", "Jquery", "Ajax", "RestFull API", "GIT", "Scrum Methodology"],
+    "info"         : "APP about one of the largest brazilian magazine. Using Geolocation API you can find places near for you on a map and also you can make reviews with rating and share with your friends.",
+    "client"       : "VejaSP @ Editora Abril",
+    "cover_image"  : "app/assets/img/projects/vejaspapp/img01.jpg",
+    "detail_image" : "app/assets/img/projects/vejaspapp/img02.jpg"
+  },
+
+
+  {
+    "slug"         : "fastshop",
+    "title"        : "FastShop E-commerce",
+    "url"          : "http://fastshop.com.br",
+    "tags"         : ["HTML5", "CSS3", "SASS", "Javascript", "DojoJS", "Ajax", "RestFull API", "GIT", "Adaptative", "SEO", "UX", "Scrum Methodology", "IBM Websphere Commerce Enterprise"],
+    "info"         : "One of the largest e-commerce in Brazil developed by the largest IT company in the world. I led the front-end team where I was developing, delegating tasks and reviewing codes. I also needed to report the working progress in a meeting with American and Indian teams.",
+    "client"       : "FastShop @ IBM",
+    "cover_image"  : "app/assets/img/projects/fastshop/img01.jpg",
+    "detail_image" : "app/assets/img/projects/fastshop/img02.jpg"
+  }
+];
